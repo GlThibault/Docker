@@ -1,5 +1,4 @@
-#docker build -t gogs .
-#docker run -d --name Gogs -p 3000:3000 gogs
+#docker build -t gogs . && docker run -d --name Gogs -p 3000:3000 gogs
 FROM golang
 EXPOSE 3000
 RUN adduser --disabled-login --gecos 'Gogs' git

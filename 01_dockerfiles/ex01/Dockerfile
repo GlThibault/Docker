@@ -1,5 +1,4 @@
-#docker build -t ts3 .
-#docker run -d --name ts3 -p 9987:9987/udp -p 30033:30033/tcp -p 10011:10011/tcp ts3
+#docker build -t ts3 . && docker run -d --name ts3 -p 9987:9987/udp -p 30033:30033/tcp -p 10011:10011/tcp ts3
 FROM debian
 EXPOSE 9987/udp
 EXPOSE 10011/tcp

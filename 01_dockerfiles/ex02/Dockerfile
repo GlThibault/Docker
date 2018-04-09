@@ -1,6 +1,4 @@
-#docker build -t ft-rails:5.0.2-on-build .
-#docker build -t ft-ruby -f test_Dockerfile .
-#docker run -p 3000:3000 --name ruby-on-rails ft-ruby 
+#docker build -t ft-rails:5.0.2-on-build . && docker build -t ft-ruby -f test_Dockerfile . && docker run -p 3000:3000 --name ruby-on-rails ft-ruby 
 FROM ruby
 EXPOSE 3000
 WORKDIR /opt/app
